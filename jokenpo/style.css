@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000000;
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    width: 100%;
+}
+
+.inicio-container, .resultado-container {
+    color: rgb(221, 221, 221);
+    font-size: 22px;
+    padding: 16px;
+    text-align: center;
+}
+
+.jogo-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    width: 100%;
+}
+
+.jogadores-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.computador {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.opcao {
+    max-width: 150px;
+    opacity: 0.3;
+    transition: 0.6s;
+    width: 100%;    
+}
+
+.jogador > .opcao {
+    cursor: pointer;
+}
+
+.jogador > .opcao:hover {
+    opacity: 1;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+}
+

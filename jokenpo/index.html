@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jokenpô - Pedra, Papel, Tesoura</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="jogo-container">
+            <div class="inicio-container">
+                <span>Selecione a sua opção no lado esquerdo!</span>
+            </div>
+
+            <div class="jogadores-container">
+                <div class="jogador">
+                    <div class="opcao" data-value="pedra" data-selected="false">
+                        <img src="assests/pedra.png" alt="pedra">
+                    </div>
+                    <div class="opcao" data-value="papel" data-selected="false">
+                        <img src="assests/papel.png" alt="papel">
+                    </div>
+                    <div class="opcao" data-value="tesoura" data-selected="false">
+                        <img src="assests/tesoura.png" alt="tesoura">
+                    </div>
+                </div>
+
+                <div class="computador">
+                    <div class="opcao" data-value="pedra" data-selected="false">
+                        <img src="assests/pedra.png" alt="pedra">
+                    </div>
+                    <div class="opcao" data-value="papel" data-selected="false">
+                        <img src="assests/papel.png" alt="papel">
+                    </div>
+                    <div class="opcao" data-value="tesoura" data-selected="false">
+                        <img src="assests/tesoura.png" alt="tesoura">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="resultado-container">
+                <span class="resultado_texto">Jogar!</span>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
